@@ -1,22 +1,22 @@
 @font-face {
-    font-family: "OMORI_MAIN";
-    src: url("fonts/OMORI_GAME.ttf") format("truetype-variations");
+    font-family: "PAPERLILY_MAIN";
+    src: url("fonts/NotoSans-Regular.ttf") format("truetype-variations");
 }
 
 @font-face {
-    font-family: "OMORI_DISTURBED";
-    src: url("fonts/OMORI_GAME2.ttf") format("truetype-variations");
+    font-family: "PAPERLILY_ALT";
+    src: url("fonts/NotoSans-Regular.ttf") format("truetype-variations");
 }
 
 body {
     background-color: grey;
     color: white;
-    font-family: 'OMORI_MAIN';
-    font-size: 28px;
+    font-family: 'PAPERLILY_MAIN';
+    font-size: 20px;
 }
 
 h1 {
-    font-family: 'OMORI_MAIN', Arial, sans-serif;
+    font-family: 'PAPERLILY_MAIN', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 60px;
@@ -53,7 +53,7 @@ a {
     padding: 5px 10px;
     font-size: 22px;
     display: block;
-    width: 400px;
+    width: 800px;
 }
 
 #toggle-box-info {
@@ -61,12 +61,12 @@ a {
 }
 
 #info-seperator {
-    width: 608px;
+    width: 1100px;
     margin-left: 0;
 }
 
 .speech-frame {
-    width: 608px;
+    width: 1100px;
     display: grid;
 }
 
@@ -161,8 +161,8 @@ a {
 }
 
 .wrap-black .dialogue-box {
-    width: 584px;
-    height: 96px;
+    width: 1100px;
+    height: 320px;
 }
 
 .dialogue-box {

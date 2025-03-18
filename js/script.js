@@ -25,6 +25,19 @@ function togglePortrait(idCheckbox, idPortrait) {
   }
 };
 
+function toggleCtc(idCheckbox, idPortrait) {
+  let checkbox = document.getElementById(idCheckbox);
+  /*
+  let image = document.getElementById(idPortrait);
+
+  if (checkbox.checked) {
+    image.style.visibility = 'visible'; // The image itself
+  } else {
+    image.style.visibility = 'hidden'; // The image itself
+  }
+    */
+};
+
 function clearPortrait(identifier) {
   let image = document.getElementById(identifier);
   image.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
@@ -37,9 +50,9 @@ function toggleText(idCheckbox, idTextarea) {
   let textarea = document.getElementById(idTextarea);
 
   if (checkbox.checked) {
-    textarea.style.fontFamily = 'OMORI_DISTURBED';
+    textarea.style.fontFamily = 'PAPERLILY_ALT';
   } else {
-    textarea.style.fontFamily = 'OMORI_MAIN';
+    textarea.style.fontFamily = 'PAPERLILY_MAIN';
   }
 };
 
@@ -49,7 +62,7 @@ function clearFrame(identifier) {
   let download = frame.getElementsByTagName('a')[0];
   // End of refactor section
   let image = frame.getElementsByTagName('img')[0];
-  let canvas = frame.getElementsByTagName('canvas')[0];
+  let canvas = frame.getElementsByTagName('canvas')[1];
 
   frame.reset();
   image.src = "https://via.placeholder.com/106/000000?text=click+me!";

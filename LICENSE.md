@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2022 Lance
+Copyright (c) 2025 AZthemute
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,6 +22,5 @@ SOFTWARE.
 
 ---
 
-As Lance, I do not claim ownership of the images found under the Character 
-Images folder.  
-Those rightfully belong to OMOCAT and is only hosted here for ease of access.
+I do not claim ownership of any images found in this project.
+Those rightfully belong to Leef 6010 and are only hosted here for ease of access.

@@ -1,51 +1,45 @@
-# Omori Dialogue Generator
+# Paper Lily Dialogue Generator
+Special thanks to Ransu-ll for their [OMORI dialogue generator](https://github.com/Ransu-ll/Omori-Dialogue-Generator), which this project is forked from. The code was simple enough to understand and I managed to get this done much quicker than if I started from scratch.
 
 ## Warning
-***Contains spoilers for the game OMORI, do not proceed if you have not played
+***Contains spoilers for the game Paper Lily, do not proceed if you have not played
 the game and want to avoid spoilers.***
 
-
 ## What is this?
-This is a project that was inspired by a certain [Reddit post](https://www.reddit.com/r/OMORI/comments/rpl3p8/is_there_a_custom_dialogue_box_generator_anywhere/)
-(sue me, it took me 4 months to finally whip up something presentable).
-
 This allows you to generate dialogue that is formatted the same way it is as in
-game, allowing for easier generation of memes and other dialogue that were
+game, allowing for easier generation of memes and other dialogue that was
 *totally* said in game!
 
 ## How do I use it?
-Head on over to the [website](https://ransu-ll.github.io/Omori-Dialogue-Generator/),
-and then follow the instructions (similar to instructions found on the website)
+Head on over to the [website](https://ransu-ll.github.io/Paper-Lily-Dialogue-Generator/),
+and then follow the instructions.
 1. Select the desired settings
 2. Edit the contents of each of the boxes
-    * Character name is simple enough! Just click into it and edit!
-    * Assuming portraits are enabled, just
-      click into the box and a file prompt
-      will open!  
-      Any 106px by 106px image should do.
-      [Download the images folder from this repository](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FRansu-ll%2FOmori-Dialogue-Generator%2Ftree%2Fmaster%2FCharacter%2520Images)
+    * Character name is simple enough! Just click on it and edit it.
+    * If you want a character's dialogue sprite to appear, enable the
+      bust checkbox and upload an image..
     * Dialogue is a little harder, however! Ensure that you press enter if your
       dialogue takes up more than one line to allow it to render properly
       (unless you like squished text).
-      You should also ensure that it takes no more than three lines, otherwise
-      it will not be rendered properly.
+      You should also ensure that it takes no more than five lines (four if
+      you have a name), otherwise it will not be rendered properly.
 3. Press the long "render" button
 4. Get the image
-    * Press the large download button that will appear, or
-    * Right click and copy image to clipboard!
+    * Press the large download button that will appear, or right click and copy image to clipboard!
 5. And you should be done!
 
 ## Some examples!
-![Canon](https://user-images.githubusercontent.com/59227493/163705424-d9a7d8c8-612c-4b36-80cc-076cfd358363.png)
-![Sunny](https://user-images.githubusercontent.com/59227493/163705580-fb6dc6cd-ba0a-434b-bc09-795038e55d2f.png)
-![Noises](https://user-images.githubusercontent.com/59227493/163705610-342524ff-ad92-4717-9340-285967b147ad.png)
+TODO
 
 ## Contributing
 This repository is open to contributions!
 
+### TODOs
+* Format the website to not be more Paper Lily-like, especially the textbox inputs.
+* Add examples and update instructions.
+
 ## Copyright
-All image assets found under the Character Images folder belong to OMOCAT and I do not claim to own any of these assets.  
-The only asset I modified was the icon used for the website.
+All image assets belong to Leef 6010 and I do not claim to own any of these assets.
 For more information on the licensing, see [the license](LICENSE.md).
 
-The OMORI game website can be found here: https://omori-game.com/
+The Paper Lily game website can be found on [itch.io](https://leef6010.itch.io/paper-lily-chapter-1) or on [Steam](https://store.steampowered.com/app/2220360/Paper_Lily__Chapter_1/).
