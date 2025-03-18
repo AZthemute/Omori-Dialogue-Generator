@@ -97,17 +97,19 @@ function renderCanvas(idFrame, idDownload) {
     ctx.drawImage(img_ctc, 918 + dialogueBoxXBase, 231 + dialogueBoxYBase);
   }
 
-  // Load textarea
+  // Load text area
   let dialogue = document.getElementsByClassName("dialogue-box")[0].value;
 
   function insertDialogue(context, unsplitText) {
     // Source/Adapted from: https://gh.princessrtfm.com/niko.html
     // Check out https://github.com/PrincessRTFM, they're hella huge brain
     // for the logic of this thing.
-    let xBase = 135 + dialogueBoxXBase; // Determined from doing some alignment in Paint.NET
-    let yBase = 88 + dialogueBoxYBase; // Determined by same method
+
+    // All determined from doing some alignment in Paint.NET
+    let xBase = 135 + dialogueBoxXBase;
+    let yBase = 88 + dialogueBoxYBase;
     if (has_name) yBase = 150 + dialogueBoxYBase;
-    let maxLineLength = 1000; // Determined by same method
+    let maxLineLength = 900;
     let splitText = unsplitText.split("\n");
 
     for (let lineNo = 0; lineNo < splitText.length; lineNo++) {
@@ -122,6 +124,7 @@ function renderCanvas(idFrame, idDownload) {
       let line = splitText[lineNo];
 
       // Check if
+      // No idea what this does. It wasn't commented and removing it seems to not break anything.
       if (context.measureText(line).width > maxLineLength) {
         const words = line.split(/\s/u);
         for (let word = words.length; word > 0; word--) {

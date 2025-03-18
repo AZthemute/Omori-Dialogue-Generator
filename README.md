@@ -11,19 +11,21 @@ game, allowing for easier generation of memes and other dialogue that was
 *totally* said in game!
 
 ## How do I use it?
-Head on over to the [website](https://ransu-ll.github.io/Paper-Lily-Dialogue-Generator/),
+Head on over to the [website](https://azthemute.github.io/Paper-Lily-Dialogue-Generator/),
 and then follow the instructions.
 1. Select the desired settings
 2. Edit the contents of each of the boxes
     * Character name is simple enough! Just click on it and edit it.
     * If you want a character's dialogue sprite to appear, enable the
-      character checkbox and upload an image..
+      character checkbox and upload an image.
+    * You can find images from online, the supporter pack, or from the game
+      files if you know how.
     * Dialogue is a little harder, however! Ensure that you press enter if your
       dialogue takes up more than one line to allow it to render properly
       (unless you like squished text).
       You should also ensure that it takes no more than five lines (four if
       you have a name), otherwise it will not be rendered properly.
-3. Press the long "render" button
+3. Press the "render" button
 4. Get the image
     * Press the large download button that will appear, or right click and copy image to clipboard!
 5. And you should be done!
@@ -33,10 +35,6 @@ TODO
 
 ## Contributing
 This repository is open to contributions!
-
-### TODOs
-* Format the website to not be more Paper Lily-like, especially the textbox inputs.
-* Add examples and update instructions.
 
 ## Copyright
 All image assets belong to Leef 6010 and I do not claim to own any of these assets.
