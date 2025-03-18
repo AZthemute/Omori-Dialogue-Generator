@@ -3,7 +3,6 @@ const nameFont = new FontFace("PAPERLILY_NAME", "url(./css/fonts/AlegreyaSC-Regu
 const altFont = new FontFace("PAPERLILY_ALT", "url(./css/fonts/Tetanus.ttf)");
 document.fonts.add(normalFont);
 document.fonts.add(altFont);
-console.log("Fonts loaded");
 
 // Cursed workarounds - the dialogue boxes and portrait boxes respectively.
 // This is needed to prevent issues with toDataURL DOM issues ("tainted canvas")
@@ -42,7 +41,6 @@ function renderCanvas(idFrame, idDownload) {
     dialogueBoxYBase = 0;
   }
 
-  console.log(has_bust);
   canvas.style.display = "block";
   let ctx = canvas.getContext("2d");
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -77,7 +75,6 @@ function renderCanvas(idFrame, idDownload) {
     for (let charNameWord of charName.split(" ")) {
       // Adding 3 spaces was the only way I could find to get it consistent with the game.
       charNameWord = charNameWord.concat("   ")
-      console.log(charNameWord)
 
       // Write character name
       ctx.fillStyle = "white";
@@ -102,7 +99,6 @@ function renderCanvas(idFrame, idDownload) {
   // Load textarea
   let dialogue = document.getElementsByClassName("dialogue-box")[0].value;
   let splitDialogue = dialogue.split("\n");
-  console.log(splitDialogue);
 
   // 29px between lines
   // max 585px
@@ -118,7 +114,6 @@ function renderCanvas(idFrame, idDownload) {
     let splitText = unsplitText.split("\n");
 
     for (let lineNo = 0; lineNo < splitText.length; lineNo++) {
-      console.log(lineNo);
       if ((lineNo >= 4) && (has_name)) {
         alert('Only a maximum of four lines can fit when you have a name. The fifth line and so has not been rendered.');
         break;

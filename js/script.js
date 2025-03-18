@@ -9,7 +9,6 @@ function toggleInfo(idToggle, idLink) {
     extendedDisplay.style.display = 'none';
     toggleLink.text = 'How to use? (show more)';
   }
-  console.log("toggled display!")
 };
 
 function togglePortrait(idCheckbox, idPortrait) {
@@ -23,19 +22,6 @@ function togglePortrait(idCheckbox, idPortrait) {
     image.parentElement.style.visibility = 'hidden'; // The black border
     image.style.visibility = 'hidden'; // The image itself
   }
-};
-
-function toggleCtc(idCheckbox, idPortrait) {
-  let checkbox = document.getElementById(idCheckbox);
-  /*
-  let image = document.getElementById(idPortrait);
-
-  if (checkbox.checked) {
-    image.style.visibility = 'visible'; // The image itself
-  } else {
-    image.style.visibility = 'hidden'; // The image itself
-  }
-    */
 };
 
 function clearPortrait(identifier) {
