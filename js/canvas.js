@@ -93,7 +93,7 @@ function renderCanvas(idFrame, idDownload) {
 
   // Load continue eye
   if (document.getElementById("toggle_ctc_0").checked) {
-    ctx.drawImage(img_ctc, 916 + dialogueBoxXBase, 228 + dialogueBoxYBase);
+    ctx.drawImage(img_ctc, 918 + dialogueBoxXBase, 231 + dialogueBoxYBase);
   }
 
   // Load textarea
