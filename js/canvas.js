@@ -1,4 +1,4 @@
-const normalFont = new FontFace("PAPERLILY_MAIN", "url(./css/fonts/NotoSans-Regular.ttf)");
+const normalFont = new FontFace("PAPERLILY_MAIN", "url(./css/fonts/NotoSans-Variable.ttf)");
 const nameFont = new FontFace("PAPERLILY_NAME", "url(./css/fonts/AlegreyaSC-Regular.ttf)")
 const altFont = new FontFace("PAPERLILY_ALT", "url(./css/fonts/Tetanus.ttf)");
 document.fonts.add(normalFont);
@@ -115,11 +115,11 @@ function renderCanvas(idFrame, idDownload) {
 
     for (let lineNo = 0; lineNo < splitText.length; lineNo++) {
       if ((lineNo >= 4) && (has_name)) {
-        alert('Only a maximum of four lines can fit when you have a name. The fifth line and so has not been rendered.');
+        alert('Only a maximum of four lines can fit when you have a name. The fifth line and onwards have not been rendered.');
         break;
       }
       else if (lineNo >= 5) {
-        alert('Only a maximum of five lines can fit. The sixth line and so has not been rendered.');
+        alert('Only a maximum of five lines can fit. The sixth line and onwards have not been rendered.');
         break;
       }
       let line = splitText[lineNo];
@@ -137,7 +137,7 @@ function renderCanvas(idFrame, idDownload) {
           }
         }
       }
-      context.fillText(line, xBase, yBase + (41 * lineNo), maxLineLength);
+      context.fillText(line, xBase, yBase + (48 * lineNo), maxLineLength);
     }
   }
 
@@ -157,7 +157,7 @@ function renderCanvas(idFrame, idDownload) {
       changeDownloadLink();
     });
   } else {
-    ctx.font = "30px PAPERLILY_MAIN";
+    ctx.font = "300 30px PAPERLILY_MAIN";
     insertDialogue(ctx, dialogue);
     changeDownloadLink();
   }
