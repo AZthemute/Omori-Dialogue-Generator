@@ -23,6 +23,7 @@ img_ctc.src = "./imgs/base/ctc.png";
 function renderCanvas(idFrame, idDownload) {
   const has_name = document.getElementsByClassName("char-name")[0].value.length > 0;
   const has_bust = document.getElementsByClassName("toggle-portrait")[0].checked;
+  const bust_flipped = document.getElementsByClassName("character-right")[0].checked;
 
   const frame = document.getElementById(idFrame);
   let canvas;
@@ -44,30 +45,30 @@ function renderCanvas(idFrame, idDownload) {
   canvas.style.display = "block";
   let ctx = canvas.getContext("2d");
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+
   let img_char = new Image();
 
-  // Load character image and portrait box
+  // Load character image
   if (has_bust) {
     img_char.src = frame.getElementsByTagName("img")[0].src;
-    ctx.drawImage(img_char, 0, 0);
+
+    if (bust_flipped) {
+      ctx.save();
+      ctx.translate(ctx.canvas.width, 0);
+      ctx.scale(-1, 1);
+      ctx.drawImage(img_char, 0, 0);
+      ctx.restore();
+    }
+    else {
+      ctx.drawImage(img_char, 0, 0);
+    }
   }
+
   // Load dialogue box
   ctx.drawImage(img_dialogue, dialogueBoxXBase, dialogueBoxYBase);
 
   // Load character name details
   let charName = document.getElementsByClassName("char-name")[0].value;
-
-  /*
-  // black outside
-  ctx.fillStyle = "black";
-  ctx.fillRect(0, 70, fullRectangleWidth, 44);
-  // white outside
-  ctx.fillStyle = "white";
-  ctx.fillRect(1, 71, fullRectangleWidth - 2, 42);
-  // black inside
-  ctx.fillStyle = "black";
-  ctx.fillRect(4, 74, fullRectangleWidth - 8, 36);
-  */
   
   if (has_name) {
     // This is horrible because the first letter of each word is bigger than the rest.
@@ -98,10 +99,6 @@ function renderCanvas(idFrame, idDownload) {
 
   // Load textarea
   let dialogue = document.getElementsByClassName("dialogue-box")[0].value;
-  let splitDialogue = dialogue.split("\n");
-
-  // 29px between lines
-  // max 585px
 
   function insertDialogue(context, unsplitText) {
     // Source/Adapted from: https://gh.princessrtfm.com/niko.html

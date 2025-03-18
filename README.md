@@ -17,7 +17,7 @@ and then follow the instructions.
 2. Edit the contents of each of the boxes
     * Character name is simple enough! Just click on it and edit it.
     * If you want a character's dialogue sprite to appear, enable the
-      bust checkbox and upload an image..
+      character checkbox and upload an image..
     * Dialogue is a little harder, however! Ensure that you press enter if your
       dialogue takes up more than one line to allow it to render properly
       (unless you like squished text).

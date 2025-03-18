@@ -28,7 +28,7 @@
             </li>
 
             <li>If you want a character's dialogue sprite to appear,
-              enable the bust checkbox and upload an image.
+              enable the character checkbox and upload an image.
             </li>
             <li>
               Dialogue is a little harder, however!
@@ -68,19 +68,25 @@
         <tr>
           <td>
             <input id="toggle_portrait_0" class="toggle-portrait" type="checkbox" name="enable-portrait" onclick="togglePortrait('toggle_portrait_0', 'char_img_0')">
-            Enable Bust?
+            Enable Character?
           </td>
           <td>
-            <input type="button" name="clear-portrait" value="Clear Bust" onclick="clearPortrait('char_img_0')">
+            <input type="button" name="clear-portrait" value="Clear Character" onclick="clearPortrait('char_img_0')">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input id="character_right_0" class="character-right" type="checkbox" name="character-right">
+            Put character on Right?
+          </td>
+          <td>
+            <input type="button" name="clear-all-frame" value="Clear All in Frame" onclick="clearFrame('frame_0')">
           </td>
         </tr>
         <tr>
           <td>
             <input id="toggle_disturbed_0" type="checkbox" name="enable-disturbed" value="Enable Scary Font?" onclick="toggleText('toggle_disturbed_0', 'dialogue_0')">
             Enable Scary Font?
-          </td>
-          <td>
-            <input type="button" name="clear-all-frame" value="Clear All in Frame" onclick="clearFrame('frame_0')">
           </td>
         </tr>
         <tr>
