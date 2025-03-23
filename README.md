@@ -19,7 +19,6 @@ and then follow the instructions.
     * If you want a character's dialogue sprite to appear, enable the
       character checkbox and upload an image. You can find images from
       online, the supporter pack, or from the game files if you know how.
-    * For best results, use an image that is 1080 pixels tall.
     * Dialogue is a little harder, however! Ensure that you press enter if your
       dialogue takes up more than one line to allow it to render properly
       (unless you like squished text).

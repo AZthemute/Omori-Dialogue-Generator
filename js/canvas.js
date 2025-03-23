@@ -56,11 +56,11 @@ function renderCanvas(idFrame, idDownload) {
       ctx.save();
       ctx.translate(ctx.canvas.width, 0);
       ctx.scale(-1, 1);
-      ctx.drawImage(img_char, 0, 0);
+      ctx.drawImage(img_char, 0, canvas.height - img_char.height);
       ctx.restore();
     }
     else {
-      ctx.drawImage(img_char, 0, 0);
+      ctx.drawImage(img_char, 0, canvas.height - img_char.height);
     }
   }
 
