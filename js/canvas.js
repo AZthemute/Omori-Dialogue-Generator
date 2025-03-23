@@ -141,9 +141,10 @@ function renderCanvas(idFrame, idDownload) {
     }
   }
 
-  function changeDownloadLink() {
+  function changeDownloadLink(canvasID) {
     let downloadLink = document.getElementById(idDownload);
     canvas = frame.getElementsByTagName("canvas")[0];
+    canvas = document.getElementById(canvasID);
     downloadLink.href = canvas.toDataURL("image/png");
   }
 
@@ -154,15 +155,14 @@ function renderCanvas(idFrame, idDownload) {
     altFont.load().then(function() {
       ctx.font = "30px PAPERLILY_ALT";
       insertDialogue(ctx, dialogue);
-      changeDownloadLink();
     });
   } else {
     ctx.font = "300 30px PAPERLILY_MAIN";
     insertDialogue(ctx, dialogue);
-    changeDownloadLink();
   }
 
-
+  if (has_bust) {changeDownloadLink("output_char")}
+  else {changeDownloadLink("output_0")}
 
   /*
   Credits - giving credit where credit is due.
