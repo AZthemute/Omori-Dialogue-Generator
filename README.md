@@ -31,7 +31,7 @@ and then follow the instructions.
 5. And you should be done!
 
 ## Some examples!
-TODO
+[Click here to see the example images!](EXAMPLES.md)
 
 ## Contributing
 This repository is open to contributions!
